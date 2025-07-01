@@ -1,0 +1,13 @@
+[general]
+
+#### Address & Root dir
+host = "::"
+port = 80
+root = "./public"
+compression = false
+
+[advanced]
+
+[[advanced.virtual-hosts]]
+host = "rss.example.com"
+root = "/var/www/rss"
