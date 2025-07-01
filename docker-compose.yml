@@ -9,7 +9,7 @@ services:
       # Feed settings
       - FEED_DOMAIN=rss.example.com
       - FEED_MAX_AGE_DAYS=10            # maximum age of comics in the feed
-      - FEED_INITIAL_FETCH_DAYS_BACK=3  # Date to start fetching comics from, optional
+      - FEED_INITIAL_FETCH_DAYS_BACK=3  # days bacl to start fetching comics from, optional
     volumes:
       - ./rss_data:/app/output  # rss feed and json are here
 
