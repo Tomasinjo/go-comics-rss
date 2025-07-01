@@ -1,6 +1,6 @@
 services:
   go_comics_rss:
-    container_name: web-server-rss
+    container_name: go_comics_rss
     image: ghcr.io/tomasinjo/go-comics-rss:main
     restart: unless-stopped
     environment:
@@ -22,5 +22,5 @@ services:
     environment:
       - SERVER_CONFIG_FILE=/etc/config.toml
     volumes:
-      - ./rss_data/feed.rss:/var/www/rss/feed.rss
+      - /rss_data/:/var/www/rss/
       - ./config.toml:/etc/config.toml
