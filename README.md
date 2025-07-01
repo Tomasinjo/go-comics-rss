@@ -10,4 +10,4 @@ Scrapes GoComics and publishes a RSS feed for selected authors every 10 minutes.
    `FEED_INITIAL_FETCH_DAYS_BACK` - (optional) on the first run, fetch comics of selected authors for X days back.  
 3. Modify config.toml: change `host` to same domain as `FEED_DOMAIN`  
 4. Run with `docker-compose up -d`  
-5. Go to set domain e.g. `http://rss.example.com:8882`  
+5. RSS feed is available at specified domain e.g. `http://rss.example.com:8882/feed.rss`  
